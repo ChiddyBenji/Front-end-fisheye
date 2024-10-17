@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr"> <!-- Indique que la langue principale est le français -->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Pour une meilleure compatibilité mobile -->
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+  <title>Fisheye - Nos photographes</title>
+</head>
+
+<body>
+  <header role="banner">
+    <a href="index.html" aria-label="Retour à la page d'accueil"> <!-- Lien cliquable pour retourner à l'accueil -->
+      <img src="assets/images/logo.png" class="logo" alt="Fisheye logo" />
+    </a>
+    <h1>Nos photographes</h1> <!-- Indique la section principale de la page -->
+  </header>
+  <main id="main" role="main" tabindex="-1" aria-labelledby="main-title"> <!-- Section principale du contenu -->
+    <div class="photographer_section" aria-live="polite" aria-atomic="true">
+      <!-- Section dynamique mise à jour via JavaScript -->
+      <!-- Le contenu dynamique des photographes sera ajouté ici via JavaScript -->
+    </div>
+  </main>
+  <footer role="contentinfo"> <!-- Ajout d'un footer sémantique pour plus de clarté -->
+  </footer>
+  <script src="scripts/templates/photographer.js"></script>
+  <script src="scripts/pages/index.js"></script>
+</body>
+
+</html>
