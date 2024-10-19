@@ -13,7 +13,8 @@ function openCarrousel(mediaIndex) {
     // La varibale permet de stocker le média à afficher en accédant au tableau contenant tout les médias dispo
     // Avec currentIndex on sait on nous sommes
     const media = mediaArray[currentIndex];
-
+    // je vais créer une condition
+    // si tu récupere le premiere élément du tableau et que c'est une image, tu crée une div
     if (media.image) {
         const carrouselImage = document.createElement('img');
         carrouselImage.src = `assets/images/${media.photographerId}/${media.image}`;

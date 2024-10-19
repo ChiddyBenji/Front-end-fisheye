@@ -70,7 +70,7 @@ function photographerDetailTemplate(photographer) {
             containPrice.appendChild(likeCountContainer);
             containPrice.appendChild(priceElement);
 
-            return header;
+            
         }
     };
 }
@@ -100,7 +100,6 @@ async function displayPhotographerData() {
         const photographerModel = photographerDetailTemplate(photographer);
         const photographerDOM = photographerModel.getUserCardDOM();
 
-        photographHeader.prepend(photographerDOM);
     } else {
         console.error('Photographe non trouvé');
     }
@@ -156,7 +155,5 @@ function updateTotalLikes() {
     if (likeCountElement) {
         likeCountElement.textContent = totalLikes; // Mets à jour le total des likes
         likeCountElement.setAttribute('aria-live', 'polite');
-    } else {
-        console.error('Total likes element not found');
     }
 }

@@ -6,6 +6,7 @@ class ImageMedia {
         this.likes = likes;
         this.photographerId = photographerId;
         this.index = index;
+        // récuper les objets spécifiquement
     }
     // l'index à une déclaration automatique par Js, il commence par 0, il est généré dynamiquement.
     getMediaDOM() {
@@ -38,9 +39,10 @@ class ImageMedia {
         heartIcon.classList.add('fas', 'fa-heart');
         heartIcon.setAttribute('role', 'button'); // Rendre l'icône interactive
         heartIcon.setAttribute('aria-label', `aime cette image, likes courants: ${this.likes}`); // Fournir une description pour les lecteurs d'écran
-
+        
         // Ajouter un gestionnaire de clic pour incrémenter les likes
         heartIcon.addEventListener('click', () => {
+            
             // Incrémente le nombre de likes pour cette image
             this.likes += 1;
             likeElement.textContent = this.likes; // Met à jour l'affichage des likes de cette image
